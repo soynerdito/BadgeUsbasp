@@ -69,7 +69,7 @@ main.hex:	main.bin
 	avr-size main.hex
 
 metaboard:
-	$(MAKE) main.hex F_CPU=16000000 TARGET=atmega168 DEFINES=-DMETABOARD_HARDWARE=1
+	$(MAKE) main.hex F_CPU=16000000 TARGET=atmega328p DEFINES=-DMETABOARD_HARDWARE=1
 
 disasm:	main.bin
 	avr-objdump -d main.bin

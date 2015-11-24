@@ -1,7 +1,7 @@
 Archive member included because of file (symbol)
 
 /usr/lib/gcc/avr/4.8.2/avr5/libgcc.a(_exit.o)
-                              /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o (exit)
+                              /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o (exit)
 /usr/lib/gcc/avr/4.8.2/avr5/libgcc.a(_copy_data.o)
                               usbdrv/usbdrv.o (__do_copy_data)
 /usr/lib/gcc/avr/4.8.2/avr5/libgcc.a(_clear_bss.o)
@@ -37,7 +37,7 @@ user_signatures  0x0000000000850000 0x0000000000000400 rw !x
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+LOAD /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
 LOAD usbdrv/usbdrv.o
 LOAD usbdrv/usbdrvasm.o
 LOAD usbdrv/oddebug.o
@@ -142,7 +142,7 @@ END GROUP
 
 .text           0x0000000000000000      0xd9c
  *(.vectors)
- .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .vectors       0x0000000000000000       0x68 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
                 0x0000000000000000                __vectors
                 0x0000000000000000                __vector_default
  *(.vectors)
@@ -173,13 +173,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000000000000ba        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .init0         0x00000000000000ba        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
                 0x00000000000000ba                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000000000000ba        0xc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .init2         0x00000000000000ba        0xc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -198,10 +198,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000000000000ec        0x8 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .init9         0x00000000000000ec        0x8 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
  *(.init9)
  *(.text)
- .text          0x00000000000000f4        0x4 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .text          0x00000000000000f4        0x4 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
                 0x00000000000000f4                __vector_22
                 0x00000000000000f4                __vector_24
                 0x00000000000000f4                __vector_12
@@ -331,7 +331,7 @@ END GROUP
 .data           0x0000000000800100        0x2 load address 0x0000000000000d9c
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
  .data          0x0000000000800100        0x2 usbdrv/usbdrv.o
                 0x0000000000800101                usbTxLen
  .data          0x0000000000800102        0x0 usbdrv/usbdrvasm.o
@@ -353,7 +353,7 @@ END GROUP
 .bss            0x0000000000800102       0x41
                 0x0000000000800102                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800102        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .bss           0x0000000000800102        0x0 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
  .bss           0x0000000000800102        0x1 usbdrv/usbdrv.o
  .bss           0x0000000000800103        0x0 usbdrv/usbdrvasm.o
  .bss           0x0000000000800103        0x0 usbdrv/oddebug.o
@@ -410,11 +410,11 @@ END GROUP
 
 .stab           0x0000000000000000      0x6cc
  *(.stab)
- .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
 
 .stabstr        0x0000000000000000       0x54
  *(.stabstr)
- .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm168.o
+ .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.8.2/../../../avr/lib/avr5/crtm328p.o
 
 .stab.excl
  *(.stab.excl)
